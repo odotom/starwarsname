@@ -1,5 +1,5 @@
 {
-  "name": "starwars-name",
+  "name": "odo-starwars-name",
   "version": "1.0.0",
   "description": "get random Star Wars name",
   "main": "src/index.js",
