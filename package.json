@@ -1,10 +1,13 @@
 {
   "name": "odo-starwars-name",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "get random Star Wars name",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "commit": "git-cz",
+    "test": "mocha src/index.test.js -watch",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
   },
   "keywords": [
     "star",
@@ -13,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/odotom/starwarsname.git"
+    "url": "https://github.com/odotom/starwarsname.git"
   },
   "author": "Thomas Odorfer <dev@iparlo.com>",
   "license": "MIT",
@@ -23,5 +26,18 @@
   "homepage": "https://github.com/odotom/starwarsname#readme",
   "dependencies": {
     "unique-random-array": "1.0.1"
+  },
+  "devDependencies": {
+    "chai": "4.1.2",
+    "commitizen": "2.10.1",
+    "cz-conventional-changelog": "2.1.0",
+    "mocha": "5.2.0",
+    "semantic-release": "^15.9.12",
+    "travis-deploy-once": "^5.0.7"
+  },
+  "config": {
+    "commitizen" : {
+        "path": "node_modules/cz-conventional-changelog"
+    }
   }
 }
