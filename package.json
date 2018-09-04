@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords" : [
+  "keywords": [
     "star",
     "wars",
     "random"
@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/odotom/starwarsname/issues"
   },
-  "homepage": "https://github.com/odotom/starwarsname#readme"
+  "homepage": "https://github.com/odotom/starwarsname#readme",
+  "dependencies": {
+    "unique-random-array": "1.0.1"
+  }
 }
