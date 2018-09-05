@@ -21,7 +21,6 @@ const threeRandomNames = names.random(3)
 
 ## Other
 
-This library was developed by [kentcdodds](https://twitter.com/kentcdodds) as part of an
-[egghead.io](http://egghead.io/) series called "How to Write a JavaScript Library."
-This is the result of running that tutorial. The original repo can be found at https://github.com/kentcdodds/starwars-names.
-Many thanks to Kent for an awesome tutorial!
+This library was initially developed by [kentcdodds](https://twitter.com/kentcdodds) as part of an
+[egghead.io](http://egghead.io/) series called "How to Write a JavaScript Library." and is the current status of running that tutorial. The original repo can be found at https://github.com/kentcdodds/starwars-names.
+Many thanks to Kent for an awesome tutorial! :+1:
