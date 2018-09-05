@@ -11,10 +11,6 @@ function random (number) {
   if (number === undefined) {
     return getRandomItem()
   } else {
-    var randomItems = []
-    for (let i = 0; i < number; i++) {
-      randomItems.push(getRandomItem())
-    }
-    return randomItems
+    return new Array(number).map(i => getRandomItem())
   }
 }

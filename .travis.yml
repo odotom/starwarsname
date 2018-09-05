@@ -6,6 +6,7 @@ notifications:
   email: false
 node_js:
   - '10'
+  - '9'
 script:
   - npm run test:single
 deploy:
