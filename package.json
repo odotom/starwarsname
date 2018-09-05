@@ -6,6 +6,7 @@
   "scripts": {
     "commit": "git-cz",
     "test": "mocha src/index.test.js -watch",
+    "test:single": "mocha src/index.test.js",
     "travis-deploy-once": "travis-deploy-once",
     "semantic-release": "semantic-release"
   },
@@ -36,8 +37,8 @@
     "travis-deploy-once": "^5.0.7"
   },
   "config": {
-    "commitizen" : {
-        "path": "node_modules/cz-conventional-changelog"
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
     }
   }
 }
