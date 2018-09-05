@@ -1,19 +1,23 @@
 language: node_js
 cache:
   directories:
-    - ~/.npm
+    - node-modules
 notifications:
   email: false
 node_js:
   - '10'
-  - '9'
+before_script:
+  - npm prune
 script:
   - npm run test:single
+  - npm run check-coverage
+after_success:
+  - npm run report-coverage
 deploy:
   provider: script
   skip_cleanup: true
   script:
     - npx travis-deploy-once "npx semantic-release"
 branches:
-  except:
-    - /^v\d+\.\d+\.\d+$/
+  only:
+    - master
