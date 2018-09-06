@@ -73,7 +73,8 @@
       "path": "node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm run test:cover && npm run check-coverage"
+      "pre-commit": "npm run test:cover && npm run check-coverage",
+      "post-commit": "git push"
     }
   },
   "babel": {
